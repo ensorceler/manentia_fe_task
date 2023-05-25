@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="h-full w-full flex justify-center items-center">
         <div className="max-w-7xl flex flex-row gap-12">
           <div className="flex flex-col gap-6 w-[372px]">
-            <p className="font-semibold text-lg text-[#00329B]">LOGO</p>
+            <p className="font-[800] text-lg text-[#00329B]">LOGO</p>
             <p className="">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.

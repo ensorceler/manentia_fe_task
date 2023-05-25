@@ -2,10 +2,11 @@ import Image from "next/image";
 import { DashedLine } from "../../public/assets";
 import DemoInfoCard from "./DemoInfoCard";
 import DemoImage from "./DemoImage";
+import { GlowEffect } from "@/ui";
 
 export default function WorkDemo() {
   return (
-    <div className="w-full pt-28 ">
+    <div className="relative w-full pt-28 overflow-x-hidden">
       <div className="w-full flex justify-center items-center">
         <div className="flex flex-col gap-8  items-center">
           <p className="text-3xl font-semibold tracking-wider text-center">
@@ -21,7 +22,7 @@ export default function WorkDemo() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl ml-auto mr-auto mt-32 mb-[550px]">
+      <div className="relative max-w-7xl ml-auto mr-auto mt-32 mb-[550px] ">
         <Image
           src={DashedLine}
           height={800}
@@ -41,7 +42,15 @@ export default function WorkDemo() {
           image="vrglasses"
           className="-bottom-[320px] right-[100px]"
         />
+        <GlowEffect
+          type="Behind VR"
+          className="-bottom-[320px] -right-[20px]"
+        />
       </div>
+      <GlowEffect
+        type="Behind VR"
+        className="z-20 top-[350px] -right-[150px]"
+      />
     </div>
   );
 }

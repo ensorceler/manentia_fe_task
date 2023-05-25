@@ -1,11 +1,12 @@
 "use client";
 import { Button, GlowEffect } from "@/ui";
+import Decorator from "@/ui/Decorator";
 import Image from "next/image";
 
 export default function CompanyIntroduction() {
   return (
     <div className="relative w-full bg-primaryBlue/10 px-20">
-      <div className="max-w-6xl ml-auto mr-auto pt-32 grid grid-cols-2 gap-24">
+      <div className="relative max-w-6xl ml-auto mr-auto pt-32 grid grid-cols-2 gap-24">
         <div className="max-w-4xl flex flex-col gap-8">
           <p className="font-semibold text-4xl leading-[60px]">
             Experienced{" "}
@@ -61,8 +62,11 @@ export default function CompanyIntroduction() {
             />
           </div>
         </div>
+        <GlowEffect className="-right-[25px] top-[20px]" />
+        <GlowEffect type="Purple" className="-left-[150px] top-[20px]" />
       </div>
-      <GlowEffect className="right-[130px] top-[20px]" />
+      <Decorator variant="left" className="-bottom-[160px] left-[0px]" />
+      <Decorator variant="right" className="bottom-[50px] right-[0px]" />
     </div>
   );
 }

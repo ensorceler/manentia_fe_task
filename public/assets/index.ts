@@ -9,6 +9,10 @@ export { default as HappyIcon } from "./svgs/happy.svg";
 // Exporting SVG images
 export { default as Star } from "./svgs/star.svg";
 export { default as PieChart } from "./svgs/piechart.svg";
+export { default as PurpleGradient } from "./svgs/purplegradient.svg";
+
+export { default as LeftSideVector } from "./svgs/leftellipse.svg";
+export { default as RightSideVector } from "./svgs/rightellipse.svg";
 
 // Exporting Images
 export { default as GuyWearingVRGlasses } from "./images/guyvrglasses.png";
