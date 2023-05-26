@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { DashedLine } from "../../public/assets";
 import DemoInfoCard from "./DemoInfoCard";
-import DemoImage from "./DemoImage";
 import { GlowEffect, Typography } from "@/ui";
 
 export default function WorkDemo() {
@@ -13,7 +12,7 @@ export default function WorkDemo() {
             Lorem Ipsum is simply dummy text of the printing.
           </Typography>
 
-          <div className="max-w-2xl ">
+          <div className="max-w-2xl">
             <Typography
               variant="Subheading3"
               className="text-[#868686] text-center font-normal"
@@ -34,19 +33,17 @@ export default function WorkDemo() {
           alt="dashed_line"
           className="z-0"
         />
-        <DemoInfoCard className="-top-[6px] left-[50px] " />
-        <DemoInfoCard className="-right-[30px] top-[700px]" happyColor="blue" />
+        <DemoInfoCard type="mobile" className="-top-[6px] left-[50px] " />
         <DemoInfoCard
+          type="mockup"
+          className="-right-[30px] top-[700px]"
+          happyColor="blue"
+        />
+        <DemoInfoCard
+          type="vr"
           className="-bottom-[350px] left-[50px]"
           happyColor="purple"
         />
-        <DemoImage image="iphone" className="right-0 top-0" />
-        <DemoImage image="mockup" className="left-0 top-[600px] " />
-        <DemoImage
-          image="vrglasses"
-          className="-bottom-[320px] right-[100px]"
-        />
-
         {/** Purple Glow Effect Behind The guy with VR Glasses */}
         <GlowEffect
           type="Behind VR"
@@ -54,10 +51,10 @@ export default function WorkDemo() {
         />
       </div>
 
-      {/** Purple Glow Effect Sideways to Iphone */}
+      {/** Purple Glow Effect Right side to Iphone */}
       <GlowEffect
         type="Behind VR"
-        className="z-20 top-[350px] -right-[150px]"
+        className="z-20 top-[450px] -right-[150px]"
       />
     </div>
   );
