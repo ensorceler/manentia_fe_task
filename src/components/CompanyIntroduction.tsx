@@ -1,4 +1,3 @@
-"use client";
 import { Button, GlowEffect } from "@/ui";
 import Decorator from "@/ui/Decorator";
 import Typography from "@/ui/Typography";
@@ -43,6 +42,7 @@ export default function CompanyIntroduction() {
               height={50}
               width={50}
               alt="flower tub"
+              unoptimized
             />
           </div>
           <div className="absolute bottom-[148px] right-[0px]">

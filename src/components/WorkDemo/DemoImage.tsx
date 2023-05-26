@@ -3,7 +3,7 @@ import {
   FloatingIphone,
   GuyWearingVRGlasses,
   WebsiteMockup,
-} from "../../public/assets";
+} from "../../../public/assets";
 import { tw } from "@/utils/tw";
 
 interface Props {

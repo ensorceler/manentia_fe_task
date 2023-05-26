@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DashedLine } from "../../public/assets";
+import { DashedLine } from "../../../public/assets";
 import DemoInfoCard from "./DemoInfoCard";
 import { GlowEffect, Typography } from "@/ui";
 

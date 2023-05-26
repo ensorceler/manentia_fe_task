@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HappyIcon } from "../../public/assets";
+import { HappyIcon } from "../../../public/assets";
 import { tw } from "@/utils/tw";
 import { Typography } from "@/ui";
 import DemoImage from "./DemoImage";
