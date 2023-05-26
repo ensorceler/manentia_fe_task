@@ -21,10 +21,9 @@ export default function NewsLetter() {
         <div className="absolute -top-[55px] right-[20px]">
           <Image src={PieChart} alt="pie " />
         </div>
-      </div>
-
-      <div className="absolute -top-[48px] left-[230px]">
-        <Image src={Star} alt="Star" />
+        <div className="absolute -top-[195px] -left-[180px]">
+          <Image src={Star} alt="Star" />
+        </div>
       </div>
     </div>
   );
