@@ -9,7 +9,7 @@ import { Typography } from "@/ui";
 
 export default function Sponsors() {
   return (
-    <div className="flex justify-center items-center px-10 py-20 ">
+    <div className="flex justify-center items-center mb-32 mt-40">
       <div className="flex flex-col gap-4">
         <div className="flex justify-center items-center">
           <Typography

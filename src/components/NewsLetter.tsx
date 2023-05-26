@@ -1,4 +1,4 @@
-import { Button } from "@/ui";
+import { Button, Typography } from "@/ui";
 import Input from "@/ui/Input";
 import Image from "next/image";
 import { PieChart, Star } from "../../public/assets";
@@ -8,9 +8,9 @@ export default function NewsLetter() {
     <div className="relative w-full h-[534px] bg-bgLightBlue flex justify-center items-center">
       <div className="relative flex flex-col gap-20 items-center">
         <div className="max-w-lg">
-          <p className="text-3xl font-semibold text-center">
+          <Typography variant="Heading2" className="text-center">
             Lorem Ipsum is simply dummy text of the printing.
-          </p>
+          </Typography>
         </div>
         <div className="flex flex-row items-center gap-4">
           <Input />
