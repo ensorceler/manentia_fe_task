@@ -1,6 +1,7 @@
 "use client";
 import { Button, GlowEffect } from "@/ui";
 import Decorator from "@/ui/Decorator";
+import Typography from "@/ui/Typography";
 import Image from "next/image";
 
 export default function CompanyIntroduction() {
@@ -8,17 +9,18 @@ export default function CompanyIntroduction() {
     <div className="relative w-full bg-primaryBlue/10 px-20">
       <div className="relative max-w-6xl ml-auto mr-auto pt-32 grid grid-cols-2 gap-24">
         <div className="max-w-4xl flex flex-col gap-8">
-          <p className="font-semibold text-4xl leading-[60px]">
+          <Typography variant="Heading1">
             Experienced{" "}
             <span className="text-primaryBlue"> mobile and web </span>{" "}
             applications and website builders measuring.
-          </p>
-          <p className="text-neutral-700 leading-[32px]">
+          </Typography>
+
+          <Typography variant="Paragraph">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders measuring dozens of completed
             projects. We build and develop mobile applications for several top
             platforms, including Android & IOS.
-          </p>
+          </Typography>
           <div className="flex flex-row items-center gap-2 ">
             <Button>Contact Us</Button>
             <Button type="secondary">View More</Button>

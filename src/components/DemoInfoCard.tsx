@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HappyIcon } from "../../public/assets";
 import { tw } from "@/utils/tw";
+import { Typography } from "@/ui";
 
 interface Props {
   className?: string;
@@ -10,7 +11,7 @@ interface Props {
 const DemoInfoCard = ({ className, happyColor = "green" }: Props) => {
   return (
     <div className={tw(`absolute max-w-lg `, className && `${className}`)}>
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-10">
         {/** header portion */}
         <div className="flex flex-row items-center gap-6">
           <div
@@ -23,26 +24,29 @@ const DemoInfoCard = ({ className, happyColor = "green" }: Props) => {
             <Image src={HappyIcon} alt="happy-icon" height={26} width={26} />
           </div>
           <div className="flex flex-col gap-1">
-            <p className="font-normal text-[17px]">
+            <Typography variant="Subheading3">
               Lorem Ipsum is simply dummy text
-            </p>
-            <p className="">Lorem Ipsum is simply dummy text</p>
+            </Typography>
+            <Typography variant="Caption" className="text-[#868686]">
+              Lorem Ipsum is simply dummy text
+            </Typography>
           </div>
         </div>
 
         <div>
-          <p className="text-3xl leading-[51px] font-semibold">
+          <Typography variant="Heading2">
             <span className="text-primaryBlue">Lorem Ipsum</span> is simply
             dummy text of the printing.
-          </p>
+          </Typography>
         </div>
-        <div>
-          <p className="text-base">
+
+        <div className="max-w-md">
+          <Typography variant="Paragraph" className="text-[#545454]">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders measuring dozens of completed
             projects. We build and develop mobile applications for several top
             platforms, including Android & IOS.{" "}
-          </p>
+          </Typography>
         </div>
       </div>
     </div>

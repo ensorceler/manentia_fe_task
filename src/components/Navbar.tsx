@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 const RouteLink = ({ route, href }: { route: string; href: string }) => {
   const router = useRouter();
-
   if (router.pathname === href) {
     return (
       <div className="relative">
@@ -26,7 +25,7 @@ export default function Navbar() {
   return (
     <div className="w-full h-24 px-8 py-6 border border-b-neutral-300 flex flex-row justify-between items-center">
       <div className="">
-        <p className="font-extrabold text-2xl text-primaryBlue">LOGO</p>
+        <p className="font-bold text-2xl text-primaryBlue">LOGO</p>
       </div>
       <div className="flex flex-row items-center gap-8">
         <RouteLink route="Home" href="/" />

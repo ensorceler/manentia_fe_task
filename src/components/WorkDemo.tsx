@@ -2,27 +2,31 @@ import Image from "next/image";
 import { DashedLine } from "../../public/assets";
 import DemoInfoCard from "./DemoInfoCard";
 import DemoImage from "./DemoImage";
-import { GlowEffect } from "@/ui";
+import { GlowEffect, Typography } from "@/ui";
 
 export default function WorkDemo() {
   return (
     <div className="relative w-full pt-28 overflow-x-hidden">
       <div className="w-full flex justify-center items-center">
         <div className="flex flex-col gap-8  items-center">
-          <p className="text-3xl font-semibold tracking-wider text-center">
+          <Typography variant="Heading2">
             Lorem Ipsum is simply dummy text of the printing.
-          </p>
+          </Typography>
 
           <div className="max-w-2xl ">
-            <p className="text-[#868686] text-lg text-center">
+            <Typography
+              variant="Subheading3"
+              className="text-[#868686] text-center font-normal"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
-            </p>
+            </Typography>
           </div>
         </div>
       </div>
 
       <div className="relative max-w-7xl ml-auto mr-auto mt-32 mb-[550px] ">
+        {/** Long Bent dashed line */}
         <Image
           src={DashedLine}
           height={800}
@@ -33,20 +37,24 @@ export default function WorkDemo() {
         <DemoInfoCard className="-top-[6px] left-[50px] " />
         <DemoInfoCard className="-right-[30px] top-[700px]" happyColor="blue" />
         <DemoInfoCard
-          className="-bottom-[320px] left-[45px]"
+          className="-bottom-[350px] left-[50px]"
           happyColor="purple"
         />
-        <DemoImage image="iphone" className="right-0 top-0 " />
+        <DemoImage image="iphone" className="right-0 top-0" />
         <DemoImage image="mockup" className="left-0 top-[600px] " />
         <DemoImage
           image="vrglasses"
           className="-bottom-[320px] right-[100px]"
         />
+
+        {/** Purple Glow Effect Behind The guy with VR Glasses */}
         <GlowEffect
           type="Behind VR"
-          className="-bottom-[320px] -right-[20px]"
+          className="-bottom-[360px] -right-[10px]"
         />
       </div>
+
+      {/** Purple Glow Effect Sideways to Iphone */}
       <GlowEffect
         type="Behind VR"
         className="z-20 top-[350px] -right-[150px]"

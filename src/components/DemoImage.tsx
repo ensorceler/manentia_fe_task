@@ -31,7 +31,7 @@ const DemoImage = ({ image, className }: Props) => {
           src={GuyWearingVRGlasses}
           alt="guy-wearing-glasses"
           height={800}
-          width={700}
+          width={800}
           unoptimized
         />
       )}

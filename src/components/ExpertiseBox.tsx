@@ -1,3 +1,4 @@
+import Typography from "@/ui/Typography";
 import Image from "next/image";
 
 interface ExpertiseBoxProps {
@@ -48,13 +49,19 @@ const ExpertiseBox = ({ type }: ExpertiseBoxProps) => {
         </div>
       )}
       <div className="flex flex-col gap-2">
-        {type === "web" && <p className="font-semibold">Web Application</p>}
-        {type === "seo" && <p className="font-semibold">SEO</p>}
-        {type === "ar/vr" && <p className="font-semibold">AR/VR Solutions</p>}
-        {type === "mobile" && (
-          <p className="font-semibold">Mobile Applications</p>
+        {type === "web" && (
+          <Typography variant="Subheading2">Web Application</Typography>
         )}
-        <p className="text-[#969696]">Lorem Ipsum is simply</p>
+        {type === "seo" && <Typography variant="Subheading2">SEO</Typography>}
+        {type === "ar/vr" && (
+          <Typography variant="Subheading2">AR/VR Solutions</Typography>
+        )}
+        {type === "mobile" && (
+          <Typography variant="Subheading2">Mobile Applications</Typography>
+        )}
+        <Typography variant="Paragraph" className="text-[#969696]">
+          Lorem Ipsum is simply
+        </Typography>
       </div>
     </div>
   );
